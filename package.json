@@ -1,0 +1,30 @@
+{
+  "name": "uploader-cli",
+  "version": "1.0.0",
+  "description": "cli file upload tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdonRain/uploader-cli.git"
+  },
+  "keywords": [
+    "upload",
+    "cli"
+  ],
+  "author": "AdonRain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdonRain/uploader-cli/issues"
+  },
+  "homepage": "https://github.com/AdonRain/uploader-cli#readme",
+  "bin": {
+    "upload": "index.js"
+  },
+  "dependencies": {
+    "request": "^2.74.0",
+    "shelljs": "^0.7.4"
+  }
+}
