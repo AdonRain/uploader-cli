@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 var fs = require('fs');
-var path = require('path');
 var request = require('request');
 var opts = process.argv.slice(2,4);
 var flag = '--server=';
@@ -10,7 +9,7 @@ opts.sort(function (a, b){
   return a.indexOf(flag) - b.indexOf(flag);
 });
 
-var file = path.join(__dirname, opts[0]);
+var file = opts[0];
 var server = (opts[1].split('='))[1];
 
 request.post({
