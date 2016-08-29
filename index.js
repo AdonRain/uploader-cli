@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-require('shelljs/global');
 
 var fs = require('fs');
 var path = require('path');
@@ -26,6 +25,6 @@ request.post({
 
   var url = JSON.parse(body).data.url;
 
-  console.log(body);
+  console.log(url);
 });
 
